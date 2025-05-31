@@ -3,6 +3,7 @@ import { Page } from "./styles";
 import { Bar } from "../../components/AppBar/AppBar";
 import { AboutMe } from "../../components/AboutMe/AboutMe";
 import { Skills } from "../../components/Skills/Skills";
+import { Projects } from "../../components/Projects/Projects";
 
 export const Main: FC = () => {
   return (
@@ -10,6 +11,7 @@ export const Main: FC = () => {
       <Bar />
       <AboutMe />
       <Skills />
+      <Projects />
     </Page>
   );
 };
