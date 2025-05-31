@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { Wrapper } from "./style";
+import { Contents, Wrapper } from "./style";
 import { Divider, Typography } from "@mui/material";
 
 interface ProjectProps {
@@ -41,11 +41,13 @@ export const Projects: FC = () => (
     <Typography variant="h5" sx={{ color: "rgb(124 58 237)", fontWeight: 800 }}>
       Projects
     </Typography>
-    {projects.map((project, index) => (
-      <>
-        <Project {...project} />
-        {index !== projects.length - 1 && <Divider variant="middle" />}
-      </>
-    ))}
+    <Contents>
+      {projects.map((project, index) => (
+        <>
+          <Project {...project} />
+          {index !== projects.length - 1 && <Divider variant="middle" />}
+        </>
+      ))}
+    </Contents>
   </Wrapper>
 );
