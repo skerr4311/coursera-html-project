@@ -5,6 +5,7 @@ import { AboutMe } from "../../components/AboutMe/AboutMe";
 import { Skills } from "../../components/Skills/Skills";
 import { Projects } from "../../components/Projects/Projects";
 import { Recommendations } from "../../components/Recommendations/Recommendations";
+import { LeaveARecommendation } from "../../components/Recommendations/LeaveARecommendation";
 
 const mockRecommendations = [
   "Steven consistently demonstrates a rare ability to move seamlessly between frontend and backend systems. His work on optimizing API performance and building scalable infrastructure has had a direct impact on the stability and speed of our platforms. He’s the kind of engineer who not only solves problems but improves the system around them.",
@@ -14,6 +15,9 @@ const mockRecommendations = [
 
 export const Main: FC = () => {
   const [recommendations, setRecommendations] = useState(mockRecommendations);
+
+  const handleNewRecommendation = (comment: string) =>
+    setRecommendations((prev) => [...prev, comment]);
   return (
     <Page>
       <Bar />
@@ -21,6 +25,7 @@ export const Main: FC = () => {
       <Skills />
       <Projects />
       <Recommendations recommendations={recommendations} />
+      <LeaveARecommendation onNewRecommendation={handleNewRecommendation} />
     </Page>
   );
 };
