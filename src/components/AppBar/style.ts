@@ -24,3 +24,16 @@ export const LinkWrapper = styled("div")({
   gap: "24px",
   marginTop: "4px",
 });
+
+export const Link = styled("div")({
+  fontWeight: 400,
+  fontSize: "0.75rem",
+  lineHeigh: 1.66,
+  letterSpacing: "0.03333em",
+  color: "#fff",
+  ":hover": {
+    fontWeight: 600,
+    cursor: "pointer",
+    textDecoration: "underline",
+  },
+});

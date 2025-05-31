@@ -18,7 +18,7 @@ export const PaperContent = styled("div")({
 });
 
 export const InputWrapper = styled("div")({
-  padding: "40px 0px 40px 0",
+  padding: "40px 0px 0px 0",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",

@@ -6,6 +6,7 @@ import { Skills } from "../../components/Skills/Skills";
 import { Projects } from "../../components/Projects/Projects";
 import { Recommendations } from "../../components/Recommendations/Recommendations";
 import { LeaveARecommendation } from "../../components/Recommendations/LeaveARecommendation";
+import { HomeIcon } from "../../components/Icon/HomeIcon";
 
 const mockRecommendations = [
   "Steven consistently demonstrates a rare ability to move seamlessly between frontend and backend systems. His work on optimizing API performance and building scalable infrastructure has had a direct impact on the stability and speed of our platforms. He’s the kind of engineer who not only solves problems but improves the system around them.",
@@ -26,6 +27,16 @@ export const Main: FC = () => {
       <Projects />
       <Recommendations recommendations={recommendations} />
       <LeaveARecommendation onNewRecommendation={handleNewRecommendation} />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "right",
+          marginRight: "20px",
+          marginBottom: "20px",
+        }}
+      >
+        <HomeIcon />
+      </div>
     </Page>
   );
 };

@@ -4,6 +4,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import type { FC } from "react";
 import {
   IconTextWrapper,
+  Link,
   LinkWrapper,
   NameContainer,
   SpaceBetween,
@@ -31,18 +32,10 @@ export const Bar: FC = () => {
           <SpaceBetween>
             <ContactInfo />
             <LinkWrapper>
-              <Typography variant="caption" color="inherit" component="div">
-                About me
-              </Typography>
-              <Typography variant="caption" color="inherit" component="div">
-                Skills
-              </Typography>
-              <Typography variant="caption" color="inherit" component="div">
-                Projects
-              </Typography>
-              <Typography variant="caption" color="inherit" component="div">
-                Recommendations
-              </Typography>
+              <Link>About me</Link>
+              <Link>Skills</Link>
+              <Link>Projects</Link>
+              <Link>Recommendations</Link>
             </LinkWrapper>
           </SpaceBetween>
         </Toolbar>

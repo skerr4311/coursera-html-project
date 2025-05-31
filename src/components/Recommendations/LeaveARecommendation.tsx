@@ -8,7 +8,7 @@ import {
   ModalContents,
   Text,
 } from "./style";
-import { Button, Modal, Typography } from "@mui/material";
+import { Modal, Typography } from "@mui/material";
 
 interface LeaveARecommendationProps {
   onNewRecommendation: (comment: string) => void;
