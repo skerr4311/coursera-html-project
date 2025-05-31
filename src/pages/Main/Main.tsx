@@ -1,9 +1,13 @@
 import type { FC } from "react";
+import { Page } from "./styles";
+import { Bar } from "../../components/AppBar/AppBar";
 
 export const Main: FC = () => {
   return (
-    <div>
+    <Page>
+      <Bar />
       <span>getting ready</span>
-    </div>
+      <span>this is new</span>
+    </Page>
   );
 };
