@@ -4,6 +4,7 @@ import { Grid, Paper, Typography } from "@mui/material";
 
 import html5Icon from "../../assets/html5.png";
 import jsIcon from "../../assets/js.png";
+import cssIcon from "../../assets/css.png";
 import reactIcon from "../../assets/react.png";
 import dockerIcon from "../../assets/docker.png";
 import nodeIcon from "../../assets/node.png";
@@ -14,6 +15,7 @@ import dotnetIcon from "../../assets/dotnet.png";
 type Icons =
   | "html5"
   | "js"
+  | "css"
   | "react"
   | "docker"
   | "node"
@@ -24,6 +26,7 @@ type Icons =
 const iconMap: Record<Icons, string> = {
   html5: html5Icon,
   js: jsIcon,
+  css: cssIcon,
   react: reactIcon,
   docker: dockerIcon,
   node: nodeIcon,
@@ -35,6 +38,7 @@ const iconMap: Record<Icons, string> = {
 const experienceMap: Record<Icons, string> = {
   html5: "5.5",
   js: "5.5",
+  css: "5.5",
   react: "3.5",
   docker: "3.5",
   node: "3.5",
