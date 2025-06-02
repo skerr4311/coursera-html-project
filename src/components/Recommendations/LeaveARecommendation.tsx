@@ -43,7 +43,7 @@ export const LeaveARecommendation: FC<LeaveARecommendationProps> = ({
         />
         <div style={{ textAlign: "center", paddingTop: "20px" }}>
           <ButtonOutlined variant="outlined" onClick={handleToggleModal}>
-            Outlined
+            Submit
           </ButtonOutlined>
         </div>
       </InputContainer>
